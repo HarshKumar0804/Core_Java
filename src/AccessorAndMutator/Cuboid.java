@@ -78,9 +78,8 @@ public class Cuboid {
         return length * breadth * height;
     }
 
-
-
-//    Q.) Add toString methods in cuboid class to print the details
-//    Q.) Take input from console to set values in cuboid objects, create at least three object
-
+    public String toString(){
+        String s = "".format("Length: %s\nBreadth: %s\nHeight: %s\nVolume: %s", this.getLength(), this.getBreadth(), this.getHeight(), this.volume());
+        return s;
+    }
 }
